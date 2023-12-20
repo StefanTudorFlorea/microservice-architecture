@@ -13,4 +13,4 @@ else
 fi
 
 # start requested service
-./$SERVICE_ID/$SERVICE_ID
+cd $SERVICE_ID && ./$SERVICE_ID

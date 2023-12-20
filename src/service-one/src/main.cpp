@@ -8,7 +8,7 @@
 int main() {
     crow::SimpleApp app;
 
-    ServiceOneAgent serviceOneAgent{app};
+    ServiceOneAgent serviceAgent{app};
 
     app.port(std::stoi(getenv("ServiceOne.port"))).multithreaded().run();
 }
