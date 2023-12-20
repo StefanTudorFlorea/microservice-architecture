@@ -1,5 +1,4 @@
-name: "ServiceTwo"
-
-version:
-  id: "1.0.0"
+info:
+  name: "ServiceTwo"
+  version: "2.0.0"
   environment: "Development"

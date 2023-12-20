@@ -1,11 +1,14 @@
+// service
+#include "ServiceTwoAgent.hpp"
+
+// deps
 #include <crow.h>
+#include <fmt/core.h>
 
 int main() {
     crow::SimpleApp app;
 
-    CROW_ROUTE(app, "/")([](){
-        return "Hello from service-two\n";
-    });
+    ServiceTwoAgent serviceAgent{app};
 
     app.port(std::stoi(getenv("ServiceTwo.port"))).multithreaded().run();
 }

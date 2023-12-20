@@ -2,8 +2,17 @@
 @ServiceOne = http://localhost:8001
 @ServiceTwo = http://localhost:8002
 
+### Main
+GET {{ServiceOne}}
+### Main
+GET {{ServiceTwo}}
+
 ### Health
 GET {{ServiceOne}}/health
+### Health
+GET {{ServiceTwo}}/health
 
-### Version
+### Info
 GET {{ServiceOne}}/info
+### Info
+GET {{ServiceTwo}}/info

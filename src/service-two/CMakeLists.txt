@@ -4,6 +4,8 @@ set(SERVICE_ID service-two)
 # crud-service
 add_executable(${SERVICE_ID}
     src/main.cpp 
+    src/ServiceTwoAgent.hpp
+    src/ServiceTwoImpl.hpp
 )
 
 # dependencies
