@@ -1,0 +1,5 @@
+name: "ServiceOne"
+
+version:
+  id: "1.0.0"
+  environment: "Development"
