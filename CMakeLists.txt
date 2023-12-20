@@ -14,4 +14,5 @@ find_package(fmt      CONFIG REQUIRED)
 find_package(yaml-cpp CONFIG REQUIRED)
 
 # services
-# add_subdirectory("services/service-1")
+add_subdirectory("src/service-one")
+add_subdirectory("src/service-two")
