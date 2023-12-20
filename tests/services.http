@@ -1,0 +1,9 @@
+# Configuration
+@ServiceOne = http://localhost:8001
+@ServiceTwo = http://localhost:8002
+
+### Health
+GET {{ServiceOne}}/health
+
+### Version
+GET {{ServiceOne}}/version

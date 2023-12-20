@@ -12,13 +12,11 @@ services:
     command: service-one
     env_file: .env
     ports:
-      - 8001:8001
-    environment:
-      - service.one.port=8000
+      - 8001:8080
 
   service-two:
     image: sfl/microservice-architecture
     command: service-two
     env_file: .env
     ports:
-      - 8002:8002
+      - 8002:8080
