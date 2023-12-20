@@ -6,4 +6,4 @@
 GET {{ServiceOne}}/health
 
 ### Version
-GET {{ServiceOne}}/version
+GET {{ServiceOne}}/info

@@ -4,20 +4,26 @@
 
 class ServiceOneImpl {
 public:
-    crow::response status() {
-        return crow::response(crow::status::OK);
+    ServiceOneImpl() {
+        _config = YAML::LoadFile("config.yml");
+    }
+
+    crow::response index() {
+        return "Hello from " + _config["info"]["name"].as<std::string>();
     }
 
     crow::response health() {
         return crow::response(crow::status::OK);
     }
 
-    crow::json::wvalue version() {
-        // load version information
-        YAML::Node config = YAML::LoadFile("config.yml");
+    crow::json::wvalue info() {
 
         return {
-            {"version", config["version"]["id"].as<std::string>()}
+            {"version",     _config["info"]["version"].as<std::string>()},
+            {"environment", _config["info"]["environment"].as<std::string>()},
+            {"name",        _config["info"]["name"].as<std::string>()}
         };
     }
+private:
+    YAML::Node _config;
 };
