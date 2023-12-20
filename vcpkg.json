@@ -1,0 +1,9 @@
+{
+    "name": "microservices",
+    "version": "1.0",
+    "dependencies": [
+      "crow",
+      "fmt",
+      "yaml-cpp"
+    ]
+}
