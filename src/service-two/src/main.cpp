@@ -7,5 +7,5 @@ int main() {
         return "Hello from service-two\n";
     });
 
-    app.port(8002).multithreaded().run();
+    app.port(std::stoi(getenv("ServiceTwo.port"))).multithreaded().run();
 }

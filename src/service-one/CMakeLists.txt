@@ -1,5 +1,9 @@
 # crud-service
-add_executable(service-one src/main.cpp)
+add_executable(service-one 
+    src/main.cpp 
+    src/ServiceOneAgent.hpp
+    src/ServiceOneImpl.hpp
+)
 
 # dependencies
 target_link_libraries(service-one
